@@ -41,7 +41,7 @@ app.post("/", function(req, res) {
 
     const options = {
         method: "POST",
-        auth: MAPI_KEY
+        auth: "doe:" + MAPI_KEY
     }
 
     const request = https.request(url, options, function(response) {
