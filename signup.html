@@ -101,11 +101,14 @@
     
 
     <button class="w-100 btn btn-lg btn-primary" type="submit">Sign Me Up!</button>
-    <p class="mt-5 mb-3 text-muted">Copyright &copy; 2023 The Agarwal Group</p>
+    <p class="mt-5 mb-3 text-muted">Copyright &copy; <span id="year">2023</span> The Agarwal Group</p>
   </form>
 </main>
 
-
+<!-- Script for dynamically fetching year for footer -->
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
     
   </body>
